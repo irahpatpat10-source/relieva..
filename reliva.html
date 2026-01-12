@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relieva | Organic Stress Relief</title>
+    <link rel="stylesheet" href="reliva.css">
+</head>
+<body>
+
+    <header>
+    <div class="header-content">
+        <div class="brand-group">
+            <img src="img/Logo.jpg" alt="Relieva Logo" class="header-logo">
+            <div class="text-group">
+                <h1>Relieva</h1>
+                <p class="tagline">Believe that you will be relieved.</p>
+            </div>
+        </div>
+        
+        <a href="#" class="cta-button">Order Now!</a>
+    </div>
+</header>
+
+    <div class="main-container">
+        <div class="about-section">
+            <h2>About the Product</h2>
+            <p>Relieva is a wellness enterprise focused on developing and distributing organic, high-quality stress-relievers The business addresses a critical gap in the market</p>
+            <p>premium natural relaxation products that are accessible and affordable for students a demographic with high stress levels but limited disposable</p>
+            <ul class="features-list">
+                <li>🌱 100% Organic & Sustainably Sourced</li>
+                <li>🎓 Specially priced for PUPPQ Students</li>
+                <li>✨ Proven Stress Reduction</li>
+            </ul>
+        </div>
+
+        <div class="image-section">
+            <div class="image-view-port" onclick="toggleSlide()">
+                <div class="slider-track" id="mainSlider">
+                    <img src="img/Prod1.jpg" alt="Relieva Product Front">
+                    <img src="img/prod2.jpg" alt="Relieva Product Back">
+                </div>
+            </div>
+            <p class="click-hint">Tap the image to see more details</p>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61586131748308" class="social-btn fb">Facebook</a>
+            <a href="https://www.instagram.com/relievaaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-btn ig">Instagram</a>
+    
+            <a href="https://www.tiktok.com/@relieva25?_r=1&_t=ZS-92xVzds81GZ" class="social-btn tk">TikTok</a>
+        </div>
+    </footer>
+
+    <script>
+        let isFlipped = false;
+        function toggleSlide() {
+            const slider = document.getElementById('mainSlider');
+            if (!isFlipped) {
+                slider.classList.add('slide-active');
+            } else {
+                slider.classList.remove('slide-active');
+            }
+            isFlipped = !isFlipped;
+        }
+    </script>
+
+</body>
+</html>

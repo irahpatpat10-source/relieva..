@@ -1,0 +1,186 @@
+/* 1. Base Styles & Global Fonts */
+body {
+    /* Using a modern sans-serif stack for high readability and a clean look */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #2d3436; /* Charcoal gray is more professional than pure black */
+    line-height: 1.7;
+}
+
+/* 2. Header & Branding */
+header {
+    background: linear-gradient(135deg, hsl(122, 87%, 69%) 0%, #00120a 100%);
+    color: #ffffff;
+    padding: 60px 20px 100px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.text-group {
+    text-align: left;
+}
+
+.header-logo {
+    width: 70px;
+    height: auto;
+}
+
+header h1 {
+    /* Georgia provides a classic, established business feel */
+    font-family: "Georgia", Times, serif; 
+    font-size: 3.5rem;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.tagline {
+    /* Clean sans-serif tagline with italics for a modern touch */
+    font-family: inherit;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin: 5px 0 0 0;
+    opacity: 0.85;
+    font-weight: 400;
+}
+
+/* 3. Interactive Elements */
+.cta-button {
+    display: inline-block;
+    background: #224603;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 6px; /* Slightly squared corners feel more "corporate" and stable */
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+    background: #feb47b;
+    transform: translateY(-3px);
+}
+
+/* 4. Main Content Area */
+.main-container {
+    max-width: 1100px;
+    margin: -50px auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    background: white;
+    padding: 50px;
+    border-radius: 12px; /* Subtle rounding for a clean business card aesthetic */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    align-items: center;
+}
+
+.about-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-section h2 {
+    font-family: "Georgia", Times, serif;
+    color: #166d0e;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.features-list {
+    padding-left: 20px;
+    color: #555;
+    list-style: none;
+}
+
+.features-list li {
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+/* 5. Animated Image Slider */
+.image-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-view-port {
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #f9f9f9;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.slider-track {
+    display: flex;
+    width: 200%;
+    transition: transform 0.6s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.slider-track img {
+    width: 50%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.slide-active {
+    transform: translateX(-50%);
+}
+
+.click-hint {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* 6. Footer & Socials */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-btn {
+    padding: 10px 25px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: opacity 0.3s;
+}
+
+.fb { background: #1877F2; }
+.ig { background: #E4405F; }
+.tw { background: #1DA1F2; }
+.tk { background: #000000; }
+
+.social-btn:hover { opacity: 0.8; }
